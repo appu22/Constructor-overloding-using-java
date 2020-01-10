@@ -1,0 +1,37 @@
+package student;
+public class STUDENT 
+{
+   int id;
+   String name;
+   int age;
+   STUDENT(int i,String n)
+   {
+       id=i;
+       name=n;
+   }
+   STUDENT(int i,String n,int a)
+   {
+       id=i;
+       name=n;
+       age=a;
+   }
+   void display()
+   {
+       System.out.println(id+" "+name+" "+age);
+   }
+   public static void main(String[] args)
+    {
+        STUDENT s1=new STUDENT(111,"karan");
+        STUDENT s2=new STUDENT(222,"aryan",25);
+        s1.display();
+        s2.display();
+    }
+    
+}
+
+OUTPUT:
+
+run:
+111 karan 0
+222 aryan 25
+BUILD SUCCESSFUL (total time: 0 seconds)
